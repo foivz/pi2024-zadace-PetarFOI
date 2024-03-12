@@ -1,19 +1,18 @@
-# Naziv projekta
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
+# Softver za upravljanje recikliranjem i kapacitetima u gradu 
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
 Petar Perenčević | pperencev22@foi.hr | 0246103303 | PetarFOI
 
-
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Kako svi gradovi u RH nastoje pratiti standarde zaštite okoliša, time je naglasak na okoliš sve veći i veći pa time i recikliranje.
+Problemi koji central za recikliranje stječu su neefikasno skladištenje materijala, nedostatak sustava za evidentiranje materijala, cijene, kapaciteta i sl.
+Softversko rješenje koje je traženo za ovo bi trebalo pokriti sve ove ključne točne i dodati ostale mogućnosti.
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+Zahtjev projekta je aplikacija koja omogućuje zaposlenicima u centru za recikliranja pregled svih ključnih podataka o materijalima i stanju skladišta.
 
 ## Zadatak
 (U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
