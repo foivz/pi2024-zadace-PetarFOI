@@ -16,7 +16,7 @@ Zahtjev projekta je aplikacija koja omogućuje zaposlenicima u centru za recikli
 Asistiraće zaposlenike u efikasnijem praćenju svih potrebni materijala te u izradi izvješća i ostalim poslovima.
 
 ## Zadatak
-[Softver za upravljanje recikliranjem i kapacitetima u gradu.](https://github.com/foivz/pi2024-zadace-PetarFOI/blob/master/Korisni%C4%8Dki%20zahtjevi%20-%20Softver%20za%20upravljanje%20recikliranjem%20i%20kapacitetima%20u%20gradu.pdf)
+[Softver za upravljanje recikliranjem i kapacitetima u gradu.]([https://github.com/foivz/pi2024-zadace-PetarFOI/blob/master/Korisni%C4%8Dki%20zahtjevi%20-%20Softver%20za%20upravljanje%20recikliranjem%20i%20kapacitetima%20u%20gradu.pdf](https://github.com/foivz/pi2024-zadace-PetarFOI/blob/master/Documentation/Korisni%C4%8Dki%20zahtjevi%20-%20Softver%20za%20upravljanje%20recikliranjem%20i%20kapacitetima%20u%20gradu.pdf)https://github.com/foivz/pi2024-zadace-PetarFOI/blob/master/Documentation/Korisni%C4%8Dki%20zahtjevi%20-%20Softver%20za%20upravljanje%20recikliranjem%20i%20kapacitetima%20u%20gradu.pdf)
 
 ## Resursi
 Svi resursi nalaze se u mapi _Documentation_.
