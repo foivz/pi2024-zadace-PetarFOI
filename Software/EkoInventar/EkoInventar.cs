@@ -66,9 +66,27 @@ namespace EkoInventar
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void picLogo_Click(object sender, EventArgs e)
         {
+
             Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
+
+        private void picLogo_MouseEnter(object sender, EventArgs e)
+        {
+            picLogo.Cursor = Cursors.Hand;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EkoInventar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

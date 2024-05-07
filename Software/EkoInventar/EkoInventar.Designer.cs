@@ -35,17 +35,19 @@
             this.btnPrijava = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.btnReg = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cbPass = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUser
             // 
+            this.txtUser.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.Silver;
-            this.txtUser.Location = new System.Drawing.Point(146, 165);
+            this.txtUser.Location = new System.Drawing.Point(62, 128);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.Size = new System.Drawing.Size(169, 22);
             this.txtUser.TabIndex = 0;
             this.txtUser.Text = "Korisničko ime";
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
@@ -54,10 +56,12 @@
             // 
             // txtPass
             // 
+            this.txtPass.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPass.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Silver;
-            this.txtPass.Location = new System.Drawing.Point(146, 200);
+            this.txtPass.Location = new System.Drawing.Point(62, 163);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.Size = new System.Drawing.Size(169, 22);
             this.txtPass.TabIndex = 1;
             this.txtPass.Text = "Lozinka";
             this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
@@ -65,11 +69,13 @@
             // 
             // btnPrijava
             // 
-            this.btnPrijava.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnPrijava.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPrijava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrijava.Location = new System.Drawing.Point(159, 240);
+            this.btnPrijava.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrijava.ForeColor = System.Drawing.Color.White;
+            this.btnPrijava.Location = new System.Drawing.Point(62, 246);
             this.btnPrijava.Name = "btnPrijava";
-            this.btnPrijava.Size = new System.Drawing.Size(75, 23);
+            this.btnPrijava.Size = new System.Drawing.Size(162, 23);
             this.btnPrijava.TabIndex = 2;
             this.btnPrijava.Text = "Prijava";
             this.btnPrijava.UseVisualStyleBackColor = false;
@@ -81,37 +87,55 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "EI_blank.png");
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(122, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 92);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(72, 12);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(141, 98);
+            this.picLogo.TabIndex = 3;
+            this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
+            this.picLogo.MouseEnter += new System.EventHandler(this.picLogo_MouseEnter);
             // 
             // btnReg
             // 
-            this.btnReg.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnReg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReg.Location = new System.Drawing.Point(159, 279);
+            this.btnReg.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReg.ForeColor = System.Drawing.Color.White;
+            this.btnReg.Location = new System.Drawing.Point(62, 285);
             this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(75, 23);
+            this.btnReg.Size = new System.Drawing.Size(162, 23);
             this.btnReg.TabIndex = 4;
             this.btnReg.Text = "Registracija";
             this.btnReg.UseVisualStyleBackColor = false;
+            // 
+            // cbPass
+            // 
+            this.cbPass.AutoSize = true;
+            this.cbPass.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPass.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.cbPass.Location = new System.Drawing.Point(131, 191);
+            this.cbPass.Name = "cbPass";
+            this.cbPass.Size = new System.Drawing.Size(100, 17);
+            this.cbPass.TabIndex = 5;
+            this.cbPass.Text = "Prikaži lozinku";
+            this.cbPass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cbPass.UseVisualStyleBackColor = true;
+            this.cbPass.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // EkoInventar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 337);
+            this.ClientSize = new System.Drawing.Size(289, 388);
+            this.Controls.Add(this.cbPass);
             this.Controls.Add(this.btnReg);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
@@ -120,7 +144,8 @@
             this.MinimizeBox = false;
             this.Name = "EkoInventar";
             this.Text = "EkoInventar";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.EkoInventar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,8 +158,9 @@
         private System.Windows.Forms.Button btnPrijava;
         private System.Windows.Forms.ImageList imageList1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Button btnReg;
+        private System.Windows.Forms.CheckBox cbPass;
     }
 }
 
