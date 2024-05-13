@@ -19,11 +19,6 @@ namespace EkoInventar
         }
 
 
-        private void txtUser_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtUser_Enter(object sender, EventArgs e)
         {
             if (txtUser.Text == "Korisničko ime")
@@ -49,6 +44,7 @@ namespace EkoInventar
             if (txtPass.Text == "Lozinka")
             {
                 txtPass.Text = "";
+                txtPass.PasswordChar = '*';
                 txtPass.ForeColor = Color.Black;
             }
         }
@@ -57,6 +53,7 @@ namespace EkoInventar
         {
             if (txtPass.Text == "")
             {
+                txtPass.PasswordChar = '\0';
                 txtPass.Text = "Lozinka";
                 txtPass.ForeColor = Color.Silver;
             }
@@ -73,20 +70,5 @@ namespace EkoInventar
             picLogo.Cursor = Cursors.Hand;
         }
 
-
-        private void EkoInventar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbPass_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPrijava_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

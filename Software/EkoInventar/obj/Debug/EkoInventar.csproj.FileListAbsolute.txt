@@ -18,3 +18,13 @@ C:\Users\Petar\source\repos\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debu
 C:\Users\Petar\source\repos\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.csproj.CoreCompileInputs.cache
 C:\Users\Petar\source\repos\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.exe
 C:\Users\Petar\source\repos\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.pdb
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\bin\Debug\EkoInventar.exe.config
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\bin\Debug\EkoInventar.exe
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\bin\Debug\EkoInventar.pdb
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.csproj.AssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.EkoInventar.resources
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.Properties.Resources.resources
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.csproj.GenerateResource.cache
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.csproj.CoreCompileInputs.cache
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.exe
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.pdb

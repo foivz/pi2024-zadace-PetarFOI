@@ -50,7 +50,6 @@
             this.txtUser.Size = new System.Drawing.Size(169, 22);
             this.txtUser.TabIndex = 0;
             this.txtUser.Text = "Korisničko ime";
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
@@ -79,7 +78,6 @@
             this.btnPrijava.TabIndex = 2;
             this.btnPrijava.Text = "Prijava";
             this.btnPrijava.UseVisualStyleBackColor = false;
-            this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
             // imageList1
             // 
@@ -126,7 +124,6 @@
             this.cbPass.Text = "Prikaži lozinku";
             this.cbPass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.cbPass.UseVisualStyleBackColor = true;
-            this.cbPass.CheckedChanged += new System.EventHandler(this.cbPass_CheckedChanged);
             // 
             // EkoInventar
             // 
@@ -144,7 +141,6 @@
             this.MinimizeBox = false;
             this.Name = "EkoInventar";
             this.Text = "EkoInventar";
-            this.Load += new System.EventHandler(this.EkoInventar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
