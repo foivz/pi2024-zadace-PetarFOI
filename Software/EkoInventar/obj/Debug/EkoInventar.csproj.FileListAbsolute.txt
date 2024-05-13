@@ -28,3 +28,4 @@ C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi202
 C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.csproj.CoreCompileInputs.cache
 C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.exe
 C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.pdb
+C:\Users\Petar\OneDrive\Desktop\faks\Programiranje SVE\C#\pi_zadaca3\foivz\pi2024-zadace-PetarFOI\Software\EkoInventar\obj\Debug\EkoInventar.FrmPregled.resources

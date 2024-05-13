@@ -70,5 +70,27 @@ namespace EkoInventar
             picLogo.Cursor = Cursors.Hand;
         }
 
+        private void btnPrijava_Click(object sender, EventArgs e)
+        {
+            string username = txtUser.Text;
+            string password = txtPass.Text;
+
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Nista nista upisali", "Pogreška!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (username == "Petar" || password == "Sifra")
+            {
+                Hide();
+                FrmPregled frmPregled = new FrmPregled();
+                frmPregled.ShowDialog();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Korisničko ime ili lozinka je krivno unesena!", "Neuspješnja prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+        }
     }
 }

@@ -57,10 +57,19 @@
     <Compile Include="EkoInventar.Designer.cs">
       <DependentUpon>EkoInventar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPregled.Designer.cs">
+      <DependentUpon>FrmPregled.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EkoInventar.resx">
       <DependentUpon>EkoInventar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPregled.resx">
+      <DependentUpon>FrmPregled.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
