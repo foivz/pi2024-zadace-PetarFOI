@@ -10,7 +10,7 @@ namespace EkoInventar.Models
     { 
         public int ID_Admin {  get; set; }
         
-        public string KorIme {  get; set; }
-        public string Lozinka { get; set; }
+        public string AKorIme {  get; set; }
+        public string ALozinka { get; set; }
     }
 }

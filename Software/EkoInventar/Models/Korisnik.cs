@@ -11,9 +11,5 @@ namespace EkoInventar.Models
         public int ID_korisnik { get; set; }
         public string Korime { get; set; }
         public string Lozinka { get; set; }
-
-        public Materijal GetMaterijals(string naziv)
-        {
-        }
     }
 }

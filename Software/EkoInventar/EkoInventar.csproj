@@ -38,6 +38,9 @@
     <ApplicationIcon>Misc\Close_Icon_icon-icons.com_69144.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBLayer">
+      <HintPath>Dlls\DBLayer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +68,7 @@
     </Compile>
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Repositories\MaterijaliRepo.cs" />
     <Compile Include="Models\Materijal.cs" />
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Program.cs" />
@@ -101,8 +105,6 @@
     <Content Include="Misc\Close_Icon_icon-icons.com_69144.ico" />
     <Content Include="Misc\EI_blank.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
