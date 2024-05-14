@@ -35,7 +35,7 @@
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>Close_Icon_icon-icons.com_69144.ico</ApplicationIcon>
+    <ApplicationIcon>Misc\Close_Icon_icon-icons.com_69144.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -63,6 +63,10 @@
     <Compile Include="FrmPregled.Designer.cs">
       <DependentUpon>FrmPregled.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Administrator.cs" />
+    <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\Materijal.cs" />
+    <Compile Include="Models\Osoba.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EkoInventar.resx">
@@ -94,8 +98,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Close_Icon_icon-icons.com_69144.ico" />
-    <Content Include="EI_blank.png" />
+    <Content Include="Misc\Close_Icon_icon-icons.com_69144.ico" />
+    <Content Include="Misc\EI_blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
