@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkoInventar", "EkoInventar\EkoInventar.csproj", "{B5284D11-008A-47A3-A685-F95F177541D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "DBLayer\DBLayer.csproj", "{31167F6F-6939-4147-AB14-D9849BDD2252}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B5284D11-008A-47A3-A685-F95F177541D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5284D11-008A-47A3-A685-F95F177541D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5284D11-008A-47A3-A685-F95F177541D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31167F6F-6939-4147-AB14-D9849BDD2252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31167F6F-6939-4147-AB14-D9849BDD2252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31167F6F-6939-4147-AB14-D9849BDD2252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31167F6F-6939-4147-AB14-D9849BDD2252}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

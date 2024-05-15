@@ -38,9 +38,6 @@
     <ApplicationIcon>Misc\Close_Icon_icon-icons.com_69144.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DBLayer">
-      <HintPath>Dlls\DBLayer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,24 +57,35 @@
     <Compile Include="EkoInventar.Designer.cs">
       <DependentUpon>EkoInventar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPregled.cs">
+    <Compile Include="FrmPretrazitelj.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPregled.Designer.cs">
-      <DependentUpon>FrmPregled.cs</DependentUpon>
+    <Compile Include="FrmPretrazitelj.Designer.cs">
+      <DependentUpon>FrmPretrazitelj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPreglednik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreglednik.Designer.cs">
+      <DependentUpon>FrmPreglednik.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Repositories\AdminRepositories.cs" />
     <Compile Include="Repositories\MaterijaliRepo.cs" />
     <Compile Include="Models\Materijal.cs" />
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\UserRepositories.cs" />
     <EmbeddedResource Include="EkoInventar.resx">
       <DependentUpon>EkoInventar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPregled.resx">
-      <DependentUpon>FrmPregled.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPretrazitelj.resx">
+      <DependentUpon>FrmPretrazitelj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreglednik.resx">
+      <DependentUpon>FrmPreglednik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,6 +113,11 @@
     <Content Include="Misc\Close_Icon_icon-icons.com_69144.ico" />
     <Content Include="Misc\EI_blank.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DBLayer\DBLayer.csproj">
+      <Project>{31167f6f-6939-4147-ab14-d9849bdd2252}</Project>
+      <Name>DBLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

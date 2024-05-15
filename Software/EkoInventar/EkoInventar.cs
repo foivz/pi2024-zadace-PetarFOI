@@ -44,7 +44,7 @@ namespace EkoInventar
             if (txtPass.Text == "Lozinka")
             {
                 txtPass.Text = "";
-                txtPass.PasswordChar = '*';
+                txtPass.PasswordChar = '●';
                 txtPass.ForeColor = Color.Black;
             }
         }
@@ -69,7 +69,13 @@ namespace EkoInventar
         {
             picLogo.Cursor = Cursors.Hand;
         }
+        public enum UserType
+        {
+            Administrator,
+            Korisnik
+        }
 
+        private UserType userType;
         private void btnPrijava_Click(object sender, EventArgs e)
         {
             string username = txtUser.Text;
@@ -82,9 +88,9 @@ namespace EkoInventar
             else if (username == "Petar" || password == "Sifra")
             {
                 Hide();
-                FrmPregled frmPregled = new FrmPregled();
-                frmPregled.ShowDialog();
-                Close();
+                FrmPreglednik frmPreglednik = new FrmPreglednik();
+                frmPreglednik.ShowDialog();
+                
             }
             else
             {
@@ -92,5 +98,18 @@ namespace EkoInventar
 
             }
         }
+
+        private void cbPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbPass.Checked) { 
+            txtPass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPass.PasswordChar = '●';
+            }
+        }
+
+
     }
 }

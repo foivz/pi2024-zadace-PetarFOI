@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace EkoInventar
 {
-    public partial class FrmPregled : Form
+    public partial class FrmPretrazitelj : Form
     {
-        public FrmPregled()
+        public FrmPretrazitelj()
         {
             InitializeComponent();
         }

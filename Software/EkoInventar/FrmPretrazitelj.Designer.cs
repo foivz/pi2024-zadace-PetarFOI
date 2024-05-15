@@ -1,6 +1,6 @@
 ﻿namespace EkoInventar
 {
-    partial class FrmPregled
+    partial class FrmPretrazitelj
     {
         /// <summary>
         /// Required designer variable.
@@ -35,18 +35,18 @@
             // dgvMaterijali
             // 
             this.dgvMaterijali.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMaterijali.Location = new System.Drawing.Point(103, 57);
+            this.dgvMaterijali.Location = new System.Drawing.Point(36, 84);
             this.dgvMaterijali.Name = "dgvMaterijali";
-            this.dgvMaterijali.Size = new System.Drawing.Size(596, 228);
+            this.dgvMaterijali.Size = new System.Drawing.Size(730, 274);
             this.dgvMaterijali.TabIndex = 0;
             // 
-            // FrmPregled
+            // FrmPretrazitelj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 409);
             this.Controls.Add(this.dgvMaterijali);
-            this.Name = "FrmPregled";
+            this.Name = "FrmPretrazitelj";
             this.Text = "frmPregled";
             this.Load += new System.EventHandler(this.FrmPregled_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaterijali)).EndInit();
