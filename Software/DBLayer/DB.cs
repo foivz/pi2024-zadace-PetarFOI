@@ -9,7 +9,7 @@ namespace DBLayer
 {
     public static class DB
     {
-        private static string _connectionString = @"Data Source=31.147.206.65,1433; Initial Catalog=EvaluationManagerTKIPP; User=nastavnik; Password=lozinka";
+        private static string _connectionString = @"Data Source=31.147.206.65,1433; Initial Catalog=PI2324_pperencev22_DB; User=PI2324_pperencev22_User; Password=b(PtQ%($";
         private static SqlConnection _connection;
         public static void OpenConnection()
         {

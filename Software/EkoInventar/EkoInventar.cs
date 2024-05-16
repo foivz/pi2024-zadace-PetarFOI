@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using EkoInventar.Models;
+using EkoInventar.Repositories;
 
 namespace EkoInventar
 {
@@ -69,28 +71,36 @@ namespace EkoInventar
         {
             picLogo.Cursor = Cursors.Hand;
         }
-        public enum UserType
-        {
-            Administrator,
-            Korisnik
-        }
 
-        private UserType userType;
+
         private void btnPrijava_Click(object sender, EventArgs e)
         {
             string username = txtUser.Text;
             string password = txtPass.Text;
 
-            if (username == "" || password == "")
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Nista nista upisali", "Pogreška!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (username == "Petar" || password == "Sifra")
+
+            Administrator admin = AdminRepositories.GetAdmin(username);
+            Korisnik korisnik = UserRepositories.GetKorisnik(username);
+
+            if(admin != null && admin.ALozinka == password)
             {
+                bool isAdmin = true;
                 Hide();
-                FrmPreglednik frmPreglednik = new FrmPreglednik();
+                FrmPreglednik frmPreglednik = new FrmPreglednik(isAdmin);
                 frmPreglednik.ShowDialog();
-                
+                Show();
+            }
+            else if (korisnik != null && korisnik.KLozinka == password)
+            {
+                bool isAdmin = false;
+                FrmPreglednik frmPreglednik = new FrmPreglednik(isAdmin);
+                frmPreglednik.Show();
+                Show();
+
             }
             else
             {

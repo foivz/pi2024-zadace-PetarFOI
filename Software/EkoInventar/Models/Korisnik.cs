@@ -9,7 +9,7 @@ namespace EkoInventar.Models
     public class Korisnik : Osoba
     {
         public int ID_korisnik { get; set; }
-        public string Korime { get; set; }
-        public string Lozinka { get; set; }
+        public string KKorIme { get; set; }
+        public string KLozinka { get; set; }
     }
 }

@@ -32,15 +32,16 @@
             this.btnMod = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnOdjava = new System.Windows.Forms.Button();
+            this.lblAdminStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(113, 46);
+            this.label1.Font = new System.Drawing.Font("Consolas", 38F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(150, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 75);
+            this.label1.Size = new System.Drawing.Size(333, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "Šta želite?";
             // 
@@ -77,17 +78,31 @@
             this.btnOdjava.UseVisualStyleBackColor = true;
             this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
             // 
+            // lblAdminStatus
+            // 
+            this.lblAdminStatus.AutoSize = true;
+            this.lblAdminStatus.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdminStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblAdminStatus.Location = new System.Drawing.Point(155, 45);
+            this.lblAdminStatus.Name = "lblAdminStatus";
+            this.lblAdminStatus.Size = new System.Drawing.Size(402, 28);
+            this.lblAdminStatus.TabIndex = 4;
+            this.lblAdminStatus.Text = "You are not/logged in as admin";
+            this.lblAdminStatus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FrmPreglednik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 292);
+            this.Controls.Add(this.lblAdminStatus);
             this.Controls.Add(this.btnOdjava);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnMod);
             this.Controls.Add(this.label1);
             this.Name = "FrmPreglednik";
             this.Text = "FrmPreglednik";
+            this.Load += new System.EventHandler(this.FrmPreglednik_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,5 +114,6 @@
         private System.Windows.Forms.Button btnMod;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnOdjava;
+        private System.Windows.Forms.Label lblAdminStatus;
     }
 }

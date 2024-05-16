@@ -14,7 +14,7 @@ namespace EkoInventar.Models
         {
             Materijal materijal = null;
 
-            string sql = $"SELECT * FROM PI2324_pperencev22_DB WHERE ID_mat = {id}";
+            string sql = $"SELECT * FROM MaterijaliEkoInventar WHERE ID_mat = {id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows)
@@ -31,7 +31,7 @@ namespace EkoInventar.Models
         {
             var materijali = new List<Materijal>();
 
-            string sql = "SELECT * FROM PI2324_pperencev22_DB";
+            string sql = "SELECT * FROM MaterijaliEkoInventar";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())

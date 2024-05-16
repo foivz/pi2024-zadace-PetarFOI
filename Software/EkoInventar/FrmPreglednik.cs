@@ -12,25 +12,45 @@ namespace EkoInventar
 {
     public partial class FrmPreglednik : Form
     {
-        public FrmPreglednik()
+        private bool _isAdmin;
+        public FrmPreglednik(bool isAdmin)
         {
             InitializeComponent();
+            _isAdmin = isAdmin;
         }
 
         private void btnMod_Click(object sender, EventArgs e)
         {
+            if (!_isAdmin)
+            {
+                MessageBox.Show("NISTE ADMIN!", "LOOLLOOLOLOL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else { 
             this.Close();
 
             FrmPretrazitelj frmPretrazitelj = new FrmPretrazitelj();
             frmPretrazitelj.Show();
+                }
         }
 
         private void btnOdjava_Click(object sender, EventArgs e)
         {
             this.Close();
-
-            EkoInventar ekoInventar = new EkoInventar();
-            ekoInventar.Show();
         }
+
+        private void FrmPreglednik_Load(object sender, EventArgs e)
+        {
+            if (_isAdmin)
+            {
+                lblAdminStatus.Text = "You are logged in as admin";
+                lblAdminStatus.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblAdminStatus.Text = "You are not logged in as admin";
+                lblAdminStatus.ForeColor = Color.Red;
+            }
+        }
+
     }
 }

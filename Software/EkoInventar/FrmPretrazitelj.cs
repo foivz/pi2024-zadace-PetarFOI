@@ -35,5 +35,10 @@ namespace EkoInventar
             dgvMaterijali.Columns["KriticniPostotak"].DisplayIndex = 4;
             dgvMaterijali.Columns["maxKolicina"].DisplayIndex = 5;
         }
+
+
+        private void txtSearchBox_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
