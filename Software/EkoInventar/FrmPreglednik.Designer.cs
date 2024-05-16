@@ -47,8 +47,9 @@
             // 
             // btnMod
             // 
-            this.btnMod.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnMod.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMod.ForeColor = System.Drawing.Color.White;
             this.btnMod.Location = new System.Drawing.Point(160, 136);
             this.btnMod.Name = "btnMod";
             this.btnMod.Size = new System.Drawing.Size(320, 50);
@@ -59,8 +60,9 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSearch.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(160, 192);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(320, 50);
@@ -70,6 +72,7 @@
             // 
             // btnOdjava
             // 
+            this.btnOdjava.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOdjava.Location = new System.Drawing.Point(282, 248);
             this.btnOdjava.Name = "btnOdjava";
             this.btnOdjava.Size = new System.Drawing.Size(75, 23);

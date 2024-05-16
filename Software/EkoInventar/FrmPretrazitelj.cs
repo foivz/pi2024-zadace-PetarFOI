@@ -39,6 +39,7 @@ namespace EkoInventar
 
         private void txtSearchBox_TextChanged(object sender, EventArgs e)
         {
+
         }
     }
 }

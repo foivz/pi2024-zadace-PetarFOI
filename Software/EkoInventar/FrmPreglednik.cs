@@ -25,12 +25,12 @@ namespace EkoInventar
             {
                 MessageBox.Show("NISTE ADMIN!", "LOOLLOOLOLOL", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else { 
-            this.Close();
+            else 
+            {
 
-            FrmPretrazitelj frmPretrazitelj = new FrmPretrazitelj();
-            frmPretrazitelj.Show();
-                }
+                FrmPretrazitelj frmPretrazitelj = new FrmPretrazitelj();
+                frmPretrazitelj.Show();
+            }
         }
 
         private void btnOdjava_Click(object sender, EventArgs e)
@@ -51,6 +51,8 @@ namespace EkoInventar
                 lblAdminStatus.ForeColor = Color.Red;
             }
         }
+
+
 
     }
 }
