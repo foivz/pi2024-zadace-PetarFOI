@@ -84,6 +84,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\UserRepositories.cs" />
+    <Compile Include="Tutorijal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorijal.Designer.cs">
+      <DependentUpon>Tutorijal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EkoInventar.resx">
       <DependentUpon>EkoInventar.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tutorijal.resx">
+      <DependentUpon>Tutorijal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

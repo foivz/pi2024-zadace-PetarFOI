@@ -60,9 +60,8 @@ namespace EkoInventar.Models
             float Kriticno = float.Parse(reader["intKriticno"].ToString());
             int MaxKolicina = int.Parse(reader["intMaxKolicina"].ToString());
 
-            // Map other fields here
 
-            var materijal = new Materijal //za pregled
+            var materijal = new Materijal 
             {
                 ID_mat = id,
                 Naziv = name,

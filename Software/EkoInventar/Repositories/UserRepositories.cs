@@ -40,6 +40,25 @@ namespace EkoInventar.Repositories
             return korisnik;
         }
 
+        public static List<Korisnik> GetKorisnik()
+        {
+            var korisnik = new List<Korisnik>(); //za ovo drugo
+
+            string sql = "SELECT * FROM Korisnik";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Korisnik korisnici = CreateObject(reader);
+                korisnik.Add(korisnici);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return korisnik;
+        }
+
         private static Korisnik CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["ID_korisnik"].ToString());

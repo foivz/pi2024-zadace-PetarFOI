@@ -38,6 +38,7 @@
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.cbPass = new System.Windows.Forms.CheckBox();
             this.btnOP = new System.Windows.Forms.Button();
+            this.btnPrvi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,11 +129,26 @@
             this.btnOP.UseVisualStyleBackColor = false;
             this.btnOP.Click += new System.EventHandler(this.btnOP_Click);
             // 
+            // btnPrvi
+            // 
+            this.btnPrvi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPrvi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrvi.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrvi.ForeColor = System.Drawing.Color.White;
+            this.btnPrvi.Location = new System.Drawing.Point(62, 273);
+            this.btnPrvi.Name = "btnPrvi";
+            this.btnPrvi.Size = new System.Drawing.Size(169, 23);
+            this.btnPrvi.TabIndex = 7;
+            this.btnPrvi.Text = "PRVO OVO OTVORITE";
+            this.btnPrvi.UseVisualStyleBackColor = false;
+            this.btnPrvi.Click += new System.EventHandler(this.btnPrvi_Click);
+            // 
             // EkoInventar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 308);
+            this.Controls.Add(this.btnPrvi);
             this.Controls.Add(this.btnOP);
             this.Controls.Add(this.cbPass);
             this.Controls.Add(this.picLogo);
@@ -160,6 +176,7 @@
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.CheckBox cbPass;
         private System.Windows.Forms.Button btnOP;
+        private System.Windows.Forms.Button btnPrvi;
     }
 }
 

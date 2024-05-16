@@ -22,7 +22,27 @@ namespace EkoInventar.Repositories
             string sql = $"SELECT * FROM Administrator WHERE Id_Admin = {id}";
             return FetchAdmin(sql);
         }
-    
+
+        public static List<Administrator> GetAdmin()
+        {
+            var administrator = new List<Administrator>(); //za ovo drugo
+
+            string sql = "SELECT * FROM Administrator";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Administrator administratori = CreateObject(reader);
+                administrator.Add(administratori);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return administrator;
+        }
+
+
         private static Administrator FetchAdmin(string sql)
         {
             DB.OpenConnection();
@@ -38,7 +58,6 @@ namespace EkoInventar.Repositories
 
             return administrator;
         }
-
         private static Administrator CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["Id_Admin"].ToString());

@@ -1,8 +1,10 @@
-﻿using EkoInventar.Models;
+﻿using DBLayer;
+using EkoInventar.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,6 +42,28 @@ namespace EkoInventar
 
         private void txtSearchBox_TextChanged(object sender, EventArgs e)
         {
+            string searchText = txtSearchBox.Text.Trim();
+
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                string query = $"SELECT * FROM MaterijaliEkoInventar WHERE strNaziv LIKE '%{searchText}%'";
+
+                DB.OpenConnection();
+
+                SqlDataReader reader = DB.GetDataReader(query);
+
+                DataTable dt = new DataTable();
+                dt.Load(reader);
+
+                reader.Close();
+                DB.CloseConnection();
+
+                dgvMaterijali.DataSource = dt;
+            }
+            else
+            {
+                ShowMaterials();
+            }
         }
     }
 }

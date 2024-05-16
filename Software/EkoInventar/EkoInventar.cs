@@ -128,5 +128,12 @@ namespace EkoInventar
             frmPreglednik.ShowDialog();
             Show();
         }
+
+        private void btnPrvi_Click(object sender, EventArgs e)
+        {
+            Tutorijal tutorijal = new Tutorijal();
+            tutorijal.ShowDialog();
+            Show();
+        }
     }
 }

@@ -40,7 +40,7 @@
             this.dgvMaterijali.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaterijali.Location = new System.Drawing.Point(35, 57);
             this.dgvMaterijali.Name = "dgvMaterijali";
-            this.dgvMaterijali.Size = new System.Drawing.Size(528, 247);
+            this.dgvMaterijali.Size = new System.Drawing.Size(528, 154);
             this.dgvMaterijali.TabIndex = 0;
             // 
             // txtSearchBox
@@ -61,7 +61,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 330);
+            this.ClientSize = new System.Drawing.Size(607, 244);
             this.Controls.Add(this.txtSearchBox);
             this.Controls.Add(this.dgvMaterijali);
             this.Name = "FrmPretrazitelj";
