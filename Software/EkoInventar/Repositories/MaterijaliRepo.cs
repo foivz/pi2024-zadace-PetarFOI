@@ -46,6 +46,11 @@ namespace EkoInventar.Models
             return materijali;
         }
 
+        internal static Materijal GetMaterijalByID(int newMaterialID)
+        {
+            throw new NotImplementedException();
+        }
+
         private static Materijal CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["ID_mat"].ToString());

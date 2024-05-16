@@ -37,6 +37,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.cbPass = new System.Windows.Forms.CheckBox();
+            this.btnOP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +114,26 @@
             this.cbPass.UseVisualStyleBackColor = true;
             this.cbPass.CheckedChanged += new System.EventHandler(this.cbPass_CheckedChanged);
             // 
+            // btnOP
+            // 
+            this.btnOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnOP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOP.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOP.ForeColor = System.Drawing.Color.White;
+            this.btnOP.Location = new System.Drawing.Point(62, 243);
+            this.btnOP.Name = "btnOP";
+            this.btnOP.Size = new System.Drawing.Size(169, 23);
+            this.btnOP.TabIndex = 6;
+            this.btnOP.Text = "OP";
+            this.btnOP.UseVisualStyleBackColor = false;
+            this.btnOP.Click += new System.EventHandler(this.btnOP_Click);
+            // 
             // EkoInventar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 308);
+            this.Controls.Add(this.btnOP);
             this.Controls.Add(this.cbPass);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnPrijava);
@@ -143,6 +159,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.CheckBox cbPass;
+        private System.Windows.Forms.Button btnOP;
     }
 }
 

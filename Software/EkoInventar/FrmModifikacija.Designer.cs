@@ -109,6 +109,7 @@
             this.btnModBrisi.TabIndex = 10;
             this.btnModBrisi.Text = "Obriši";
             this.btnModBrisi.UseVisualStyleBackColor = true;
+            this.btnModBrisi.Click += new System.EventHandler(this.btnModBrisi_Click);
             // 
             // cbPopis
             // 
@@ -128,6 +129,7 @@
             this.btnModDodaj.TabIndex = 12;
             this.btnModDodaj.Text = "+";
             this.btnModDodaj.UseVisualStyleBackColor = true;
+            this.btnModDodaj.Click += new System.EventHandler(this.btnModDodaj_Click);
             // 
             // lblModDodaj
             // 

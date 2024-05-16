@@ -120,6 +120,13 @@ namespace EkoInventar
             }
         }
 
-
+        private void btnOP_Click(object sender, EventArgs e)
+        {
+            bool isAdmin = true;
+            Hide();
+            FrmPreglednik frmPreglednik = new FrmPreglednik(isAdmin);
+            frmPreglednik.ShowDialog();
+            Show();
+        }
     }
 }
