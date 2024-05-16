@@ -57,6 +57,12 @@
     <Compile Include="EkoInventar.Designer.cs">
       <DependentUpon>EkoInventar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModifikacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifikacija.Designer.cs">
+      <DependentUpon>FrmModifikacija.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPretrazitelj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Repositories\UserRepositories.cs" />
     <EmbeddedResource Include="EkoInventar.resx">
       <DependentUpon>EkoInventar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifikacija.resx">
+      <DependentUpon>FrmModifikacija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPretrazitelj.resx">
       <DependentUpon>FrmPretrazitelj.cs</DependentUpon>

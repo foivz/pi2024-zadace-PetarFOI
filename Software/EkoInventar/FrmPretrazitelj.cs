@@ -26,6 +26,7 @@ namespace EkoInventar
         private void ShowMaterials()
         {
             var materijali = MaterijaliRepo.GetMaterijali();
+            
             dgvMaterijali.DataSource = materijali;
 
             dgvMaterijali.Columns["ID_mat"].DisplayIndex = 0;
@@ -39,7 +40,6 @@ namespace EkoInventar
 
         private void txtSearchBox_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Ide gas", "Ne ide gas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -25,11 +25,10 @@ namespace EkoInventar
             {
                 MessageBox.Show("NISTE ADMIN!", "LOOLLOOLOLOL", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else 
+            else
             {
-
-                FrmPretrazitelj frmPretrazitelj = new FrmPretrazitelj();
-                frmPretrazitelj.Show();
+                FrmModifikacija frmModifikacija = new FrmModifikacija();
+                frmModifikacija.Show();
             }
         }
 
@@ -52,7 +51,10 @@ namespace EkoInventar
             }
         }
 
-
-
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+                FrmPretrazitelj frmPretrazitelj = new FrmPretrazitelj();
+                frmPretrazitelj.Show();
+        }
     }
 }

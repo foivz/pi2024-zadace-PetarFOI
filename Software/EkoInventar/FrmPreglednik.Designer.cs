@@ -69,6 +69,7 @@
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Pretraživati";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnOdjava
             // 

@@ -33,5 +33,6 @@ namespace DBLayer
             SqlCommand command = new SqlCommand(sqlCommand, _connection);
             return command.ExecuteNonQuery();
         }
+
     }
 }

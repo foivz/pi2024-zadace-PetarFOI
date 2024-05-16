@@ -29,7 +29,7 @@ namespace EkoInventar.Models
 
         public static List<Materijal> GetMaterijali()
         {
-            var materijali = new List<Materijal>();
+            var materijali = new List<Materijal>(); //za ovo drugo
 
             string sql = "SELECT * FROM MaterijaliEkoInventar";
             DB.OpenConnection();
@@ -51,13 +51,13 @@ namespace EkoInventar.Models
             int id = int.Parse(reader["ID_mat"].ToString());
             string name = reader["strNaziv"].ToString();
             int Kolicina = int.Parse(reader["intKolicina"].ToString());
-            int Cijena = int.Parse(reader["intCijena"].ToString());
-            int Kriticno = int.Parse(reader["intKriticno"].ToString());
+            float Cijena = float.Parse(reader["intCijena"].ToString());
+            float Kriticno = float.Parse(reader["intKriticno"].ToString());
             int MaxKolicina = int.Parse(reader["intMaxKolicina"].ToString());
 
             // Map other fields here
 
-            var materijal = new Materijal
+            var materijal = new Materijal //za pregled
             {
                 ID_mat = id,
                 Naziv = name,
