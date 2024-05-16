@@ -39,7 +39,7 @@ namespace EkoInventar
 
         private void txtSearchBox_TextChanged(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Ide gas", "Ne ide gas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
