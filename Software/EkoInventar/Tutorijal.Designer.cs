@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tutorijal));
             this.lblAdmini = new System.Windows.Forms.Label();
             this.lblKorisnici = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -113,6 +114,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblKorisnici);
             this.Controls.Add(this.lblAdmini);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tutorijal";
             this.Text = "Tutorijal";
             this.Load += new System.EventHandler(this.Tutorijal_Load);

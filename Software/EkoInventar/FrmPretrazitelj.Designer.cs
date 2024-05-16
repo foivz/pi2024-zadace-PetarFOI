@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPretrazitelj));
             this.dgvMaterijali = new System.Windows.Forms.DataGridView();
             this.txtSearchBox = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -64,6 +65,7 @@
             this.ClientSize = new System.Drawing.Size(607, 244);
             this.Controls.Add(this.txtSearchBox);
             this.Controls.Add(this.dgvMaterijali);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPretrazitelj";
             this.Text = "frmPregled";
             this.Load += new System.EventHandler(this.FrmPregled_Load);

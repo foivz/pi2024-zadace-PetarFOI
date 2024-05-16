@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModifikacija));
             this.lblModIme = new System.Windows.Forms.Label();
             this.lvlModMax = new System.Windows.Forms.Label();
             this.lblModTrenutno = new System.Windows.Forms.Label();
@@ -198,6 +199,7 @@
             this.Controls.Add(this.lblModTrenutno);
             this.Controls.Add(this.lvlModMax);
             this.Controls.Add(this.lblModIme);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmModifikacija";
             this.Text = "FrmModifikacija";
             this.Load += new System.EventHandler(this.FrmModifikacija_Load);
