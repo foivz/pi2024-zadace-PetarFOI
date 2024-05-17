@@ -91,7 +91,7 @@
             this.rtbVidi.Size = new System.Drawing.Size(265, 72);
             this.rtbVidi.TabIndex = 5;
             this.rtbVidi.Text = "Ako stisnete OP automatski vas logira kao admina, ovo je samo da je lakse raditi " +
-    "na aplikacijia";
+    "na aplikaciji";
             // 
             // rtbEASTER
             // 

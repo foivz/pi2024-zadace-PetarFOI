@@ -29,7 +29,7 @@ namespace EkoInventar.Models
 
         public static List<Materijal> GetMaterijali()
         {
-            var materijali = new List<Materijal>(); //za ovo drugo
+            var materijali = new List<Materijal>(); 
 
             string sql = "SELECT * FROM MaterijaliEkoInventar";
             DB.OpenConnection();

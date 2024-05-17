@@ -61,6 +61,11 @@ namespace EkoInventar
             selectedMaterijal.KriticniPostotak = (float)numModCritical.Value;
             selectedMaterijal.Cijena = (float)numModCijena.Value;
 
+            if (selectedMaterijal.Kolicina > selectedMaterijal.maxKolicina)
+            {
+                selectedMaterijal.Kolicina = selectedMaterijal.maxKolicina;
+            } 
+
             int selectedIndex = cbPopis.SelectedIndex;
 
             UpdateMaterijalInDatabase(selectedMaterijal);
@@ -94,7 +99,7 @@ namespace EkoInventar
         {
             Materijal newMaterijal = new Materijal();
 
-            newMaterijal.Naziv = "New Material";
+            newMaterijal.Naziv = "Novi materijal";
             newMaterijal.maxKolicina = 0;
             newMaterijal.Kolicina = 0;
             newMaterijal.KriticniPostotak = 0.0f;

@@ -23,7 +23,7 @@ namespace EkoInventar
         {
             if (!_isAdmin)
             {
-                MessageBox.Show("NISTE ADMIN!", "LOOLLOOLOLOL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("NISTE ADMIN!", "UPS!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -41,12 +41,12 @@ namespace EkoInventar
         {
             if (_isAdmin)
             {
-                lblAdminStatus.Text = "You are logged in as admin";
+                lblAdminStatus.Text = "Ulogirani ste kao admin";
                 lblAdminStatus.ForeColor = Color.Green;
             }
             else
             {
-                lblAdminStatus.Text = "You are not logged in as admin";
+                lblAdminStatus.Text = "Niste ulogirani kao admin";
                 lblAdminStatus.ForeColor = Color.Red;
             }
         }

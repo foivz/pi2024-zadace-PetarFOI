@@ -90,9 +90,9 @@
             this.lblAdminStatus.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblAdminStatus.Location = new System.Drawing.Point(155, 45);
             this.lblAdminStatus.Name = "lblAdminStatus";
-            this.lblAdminStatus.Size = new System.Drawing.Size(402, 28);
+            this.lblAdminStatus.Size = new System.Drawing.Size(90, 28);
             this.lblAdminStatus.TabIndex = 4;
-            this.lblAdminStatus.Text = "You are not/logged in as admin";
+            this.lblAdminStatus.Text = "status";
             this.lblAdminStatus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FrmPreglednik

@@ -25,7 +25,7 @@ namespace EkoInventar.Repositories
 
         public static List<Administrator> GetAdmin()
         {
-            var administrator = new List<Administrator>(); //za ovo drugo
+            var administrator = new List<Administrator>();
 
             string sql = "SELECT * FROM Administrator";
             DB.OpenConnection();

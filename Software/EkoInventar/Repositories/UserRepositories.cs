@@ -42,8 +42,7 @@ namespace EkoInventar.Repositories
 
         public static List<Korisnik> GetKorisnik()
         {
-            var korisnik = new List<Korisnik>(); //za ovo drugo
-
+            var korisnik = new List<Korisnik>(); 
             string sql = "SELECT * FROM Korisnik";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
