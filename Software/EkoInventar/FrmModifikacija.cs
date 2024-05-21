@@ -80,10 +80,16 @@ namespace EkoInventar
         private void UpdateMaterijalInDatabase(Materijal materijal)
         {
             DB.OpenConnection();
-            string query = $"UPDATE MaterijaliEkoInventar SET strNaziv = '{materijal.Naziv}', intMaxKolicina = {materijal.maxKolicina}, intKolicina = {materijal.Kolicina}, intKriticno = {materijal.KriticniPostotak}, intCijena = {materijal.Cijena} WHERE ID_mat = {materijal.ID_mat}";
+            string query = $"UPDATE MaterijaliEkoInventar SET strNaziv = '{materijal.Naziv}', " +
+                           $"intMaxKolicina = {materijal.maxKolicina}, " +
+                           $"intKolicina = {materijal.Kolicina}, " +
+                           $"intKriticno = {materijal.KriticniPostotak.ToString(System.Globalization.CultureInfo.InvariantCulture)}, " +
+                           $"intCijena = {materijal.Cijena.ToString(System.Globalization.CultureInfo.InvariantCulture)} " +
+                           $"WHERE ID_mat = {materijal.ID_mat}";
             DB.ExecuteCommand(query);
             DB.CloseConnection();
         }
+
 
         private void DeleteMaterijalInDatabase(Materijal materijal)
         {
@@ -122,12 +128,14 @@ namespace EkoInventar
 
             materijal.ID_mat = newID;
 
-
             string query = $"INSERT INTO MaterijaliEkoInventar (ID_mat, strNaziv, intMaxKolicina, intKolicina, intKriticno, intCijena) " +
-                           $"VALUES ({materijal.ID_mat}, '{materijal.Naziv}', {materijal.maxKolicina}, {materijal.Kolicina}, {materijal.KriticniPostotak}, {materijal.Cijena})";
+                           $"VALUES ({materijal.ID_mat}, '{materijal.Naziv}', {materijal.maxKolicina}, {materijal.Kolicina}, " +
+                           $"{materijal.KriticniPostotak.ToString(System.Globalization.CultureInfo.InvariantCulture)}, " +
+                           $"{materijal.Cijena.ToString(System.Globalization.CultureInfo.InvariantCulture)})";
             DB.ExecuteCommand(query);
             DB.CloseConnection();
         }
+
 
         private int GetLastInsertedIDMat()
         {
